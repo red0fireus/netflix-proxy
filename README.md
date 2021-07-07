@@ -40,7 +40,7 @@ This project is **free**, covered by the [MIT License](https://github.com/ab77/n
 # instructions
 The following paragraphs show how to get this solution up and running with a few different Cloud providers I've tried so far. If you prefer a video tutorial, [here](https://www.youtube.com/watch?v=8DrNgnq_cdM) is one prapared by one of the users. Note, OpenVZ **won't work**[[n15]](#footnotes), make sure to get a proper virtual machine using KVM or Xen.
 
-[![](https://raw.githubusercontent.com/ab77/netflix-proxy/master/static/digitalocean.png)](https://m.do.co/c/937b01397c94)
+[![](https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg)](https://www.digitalocean.com/?refcode=937b01397c94&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge)
 
 (Netflix is **blocked**[[n16]](#footnotes)) The following is based on a standard Ubuntu Docker image provided by `DigitalOcean`, but should in theory work on any Linux distribution **with** Docker pre-installed.
 
@@ -249,7 +249,7 @@ sudo apt-get update\
 
 [![](https://raw.githubusercontent.com/ab77/netflix-proxy/master/static/gandi.png)](https://www.gandi.net/hosting/iaas/buy)
 
-The following is based on Ubuntu image provided by `Gandi` using` root` login with SSH key only (no password). For default non-root `admin` login, adjust step 6 to use `sudo` where nesessary.
+The following is based on Ubuntu image provided by `Gandi` using` root` login with SSH key only (no password). For default non-root `admin` login, adjust step 6 to use `sudo` where necessary.
 
 1. Head over to [Gandi](https://www.gandi.net/hosting/iaas/buy) to create a virtual server in a geographic location of interest.
 2. SSH to your server and run:
@@ -406,7 +406,7 @@ If you find this useful, please feel free to make a small donation with [PayPal]
 16. Netflix have most definitely blocked this service provider network ranges, so following the process is unlikely to yield an unblocking solution. If you own a compatible device, you could try `black.box` [unzoner](http://unzoner.com).
 17. GFW is probably re-writing DNS responses for certain very sensitive domains (i.e. facebook.com), so unfortunately a simple proxy solution like this won't work. VPN technology is required to bypass, try `black.box` [unzoner](http://unzoner.com).
 18. [dnsmasq](http://www.thekelleys.org.uk/dnsmasq/doc.html) by `simon@thekelleys.org.uk`.
-19. Python3 (latest) release won't work on Ubuntu16/Debian9, use Python2 release or (recommended) upgrade to a more recent distribution.
+19. Python3 (latest) release won't work on Ubuntu16/Debian9, upgrade to a more recent distribution (Python2 EOL Jan/2020).
 
 <hr>
 <p align="center">&copy; 2016-2019 <a href="http://ab77.github.io/">ab1</a></p>
