@@ -12,3 +12,6 @@ else
     exit 1
 fi
 
+test
+test
+test
